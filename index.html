@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Miguel A. Adames Morillo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">M.A.M.</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#studies">Estudios</a></li>
+                <li><a href="#projects">Infraestructura</a></li>
+                <li><a href="#certifications">Certificaciones</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <p class="greeting" data-aos="fade-down">Hola, soy</p>
+            <h1 class="name-title" data-aos="fade-up" data-aos-delay="200">
+                Miguel A. Adames Morillo
+            </h1>
+            <h2 class="job-title" data-aos="fade-up" data-aos-delay="400">
+                Ingeniero de Infraestructura & Redes
+            </h2>
+            <p class="description" data-aos="fade-up" data-aos-delay="600">
+                Especialista en diseño de arquitecturas seguras, implementación de servidores y soluciones de alta disponibilidad.
+            </p>
+            <a href="#projects" class="btn btn-primary" data-aos="fade-up" data-aos-delay="800">Ver Proyectos</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">01. Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up">
+                    <p>
+                        Soy un profesional apasionado por la tecnología con un enfoque sólido en la administración de sistemas y seguridad de redes. Mi objetivo es garantizar la conectividad, integridad y eficiencia de las infraestructuras TI.
+                    </p>
+                    <p>
+                        Tengo experiencia trabajando con tecnologías como Cisco, Windows Server, Linux y Virtualización. Me caracterizo por mi capacidad de resolución de problemas críticos y aprendizaje continuo.
+                    </p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-caret-right"></i> Cisco CCNA/CCNP</li>
+                        <li><i class="fas fa-caret-right"></i> Windows Server</li>
+                        <li><i class="fas fa-caret-right"></i> Linux (RedHat/Debian)</li>
+                        <li><i class="fas fa-caret-right"></i> Cloud (Azure/AWS)</li>
+                        <li><i class="fas fa-caret-right"></i> Virtualización (VMware)</li>
+                        <li><i class="fas fa-caret-right"></i> Ciberseguridad</li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="studies" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">02. Estudios</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <span class="date">2020 - 2024</span>
+                        <h3>Ingeniería en Sistemas Computacionales</h3>
+                        <h4>Universidad Tecnológica (Ejemplo)</h4>
+                        <p>Especialización en redes de datos y seguridad informática. Graduado con honores.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <span class="date">2018 - 2020</span>
+                        <h3>Tecnólogo en Redes</h3>
+                        <h4>Instituto Técnico (Ejemplo)</h4>
+                        <p>Fundamentos de routing, switching y cableado estructurado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">03. Proyectos de Infraestructura</h2>
+            <div class="projects-grid">
+
+                <article class="project-card" data-aos="zoom-in">
+                    <div class="project-header">
+                        <i class="far fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="#" onclick="openModal('pdf', 'assets/pdfs/ejemplo.pdf', 'Diseño de Red Corporativa')"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Diseño de Red WAN/LAN Corporativa</h3>
+                    <div class="project-desc">
+                        <p>Diseño e implementación de una topología de red redundante utilizando OSPF y VLANs para una empresa de 500 empleados.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Cisco Packet Tracer</li>
+                        <li>Visio</li>
+                        <li>OSPF</li>
+                    </ul>
+                    <button class="btn-text" onclick="openModal('pdf', 'assets/pdfs/ejemplo.pdf', 'Diseño de Red Corporativa')">Ver Diagrama (PDF)</button>
+                </article>
+
+                <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-header">
+                        <i class="far fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="#" onclick="openModal('video', 'assets/videos/demo.mp4', 'Configuración de Servidor')"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Hardening de Servidor Linux</h3>
+                    <div class="project-desc">
+                        <p>Video demostrativo de la configuración de seguridad, firewalls (iptables) y auditoría de logs en un entorno CentOS.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Linux</li>
+                        <li>Bash Scripting</li>
+                        <li>Security</li>
+                    </ul>
+                    <button class="btn-text" onclick="openModal('video', 'assets/videos/demo.mp4', 'Configuración de Servidor')">Ver Demo</button>
+                </article>
+
+                <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-header">
+                        <i class="far fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="#" onclick="openModal('image', 'assets/images/rack.jpg', 'Cableado Estructurado')"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Implementación Data Center</h3>
+                    <div class="project-desc">
+                        <p>Gestión del cableado estructurado y montaje de racks para servidores blade de alta densidad.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Hardware</li>
+                        <li>Cabling</li>
+                        <li>Racks</li>
+                    </ul>
+                    <button class="btn-text" onclick="openModal('image', 'assets/images/rack.jpg', 'Cableado Estructurado')">Ver Fotos</button>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">04. Certificaciones</h2>
+            <div class="certs-grid">
+                
+                <div class="cert-card" data-aos="flip-left">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Cisco CCNA</h3>
+                    <p>Routing and Switching</p>
+                    <div class="cert-actions">
+                        <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/ccna-cert.jpg', 'Certificado CCNA')">Ver Certificado</button>
+                        <a href="https://www.credly.com" target="_blank" class="btn-sm btn-solid">Validar <i class="fas fa-check-circle"></i></a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>CompTIA Security+</h3>
+                    <p>Seguridad Informática</p>
+                    <div class="cert-actions">
+                        <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/sec-plus.jpg', 'Security+')">Ver Certificado</button>
+                        <a href="#" target="_blank" class="btn-sm btn-solid">Validar <i class="fas fa-check-circle"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Diseñado y Desarrollado por Miguel A. Adames Morillo</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Título del Proyecto</h3>
+            <div id="modalBody" class="modal-body-container">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
