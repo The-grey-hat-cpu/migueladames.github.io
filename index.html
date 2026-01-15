@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Miguel A. Adames Morillo</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <title>Inicio | Miguel A. Adames Morillo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,237 +15,41 @@
         <div class="container nav-content">
             <div class="logo">Mi Portafolio</div>
             <ul class="nav-links">
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#studies">Estudios</a></li>
-                <li><a href="#projects">Infraestructura</a></li>
-                <li><a href="#sherlocks">Sherlocks</a></li> 
-                <li><a href="#certifications">Certificaciones</a></li>
+                <li><a href="index.html" style="color: var(--accent);">Inicio</a></li>
+                <li><a href="studies.html">Estudios</a></li> <li><a href="projects.html">Infraestructura</a></li>
+                <li><a href="sherlocks.html">Sherlocks</a></li> 
+                <li><a href="certifications.html">Certificaciones</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container hero-content">
             <p class="greeting" data-aos="fade-down">Hola, soy</p>
-            <h1 class="name-title" data-aos="fade-up" data-aos-delay="200">
-                Miguel A. Adames Morillo
-            </h1>
-            <h2 class="job-title" data-aos="fade-up" data-aos-delay="400">
-                Tecnólogo en Seguridad Informática
-            </h2>
+            <h1 class="name-title" data-aos="fade-up" data-aos-delay="200">Miguel A. Adames Morillo</h1>
+            <h2 class="job-title" data-aos="fade-up" data-aos-delay="400">Tecnólogo en Seguridad Informática</h2>
             <p class="description" data-aos="fade-up" data-aos-delay="600">
                 Apasionado por la ciberseguridad y en proceso de especialización en el área de Blue Team.
             </p>
-            <a href="#projects" class="btn btn-primary" data-aos="fade-up" data-aos-delay="800">Ver Proyectos</a>
+            <a href="projects.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="800">Ver Proyectos</a>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <section class="section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-right">01. Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text" data-aos="fade-up">
-                    <p>
-                        Soy estudiante de Seguridad Informática en el ITLA, apasionado por la ciberseguridad y en proceso de especialización en el área de Blue Team. Actualmente cuento con certificaciones de Cisco en Introduction to Cybersecurity, Cybersecurity Essentials, IT Essentials y CCNA 1-3.
-                    </p>
-                    <p>
-                        Tengo experiencia trabajando con tecnologías como Cisco, Windows Server, Linux y Virtualización. Me caracterizo por mi capacidad de resolución de problemas críticos y aprendizaje continuo.
-                    </p>
+                    <p>Soy estudiante de Seguridad Informática en el ITLA, apasionado por la ciberseguridad. Cuento con certificaciones Cisco (CCNA, CyberOps) y experiencia práctica en Blue Team.</p>
                     <ul class="skills-list">
                         <li><i class="fas fa-caret-right"></i> Cisco CCNA</li>
                         <li><i class="fas fa-caret-right"></i> Windows Server</li>
                         <li><i class="fas fa-caret-right"></i> Linux (RedHat/Debian)</li>
-                        <li><i class="fas fa-caret-right"></i> Virtualización (VMware)</li>
-                        <li><i class="fas fa-caret-right"></i> Ciberseguridad (Blue Team)</li>
+                        <li><i class="fas fa-caret-right"></i> Virtualización</li>
+                        <li><i class="fas fa-caret-right"></i> Blue Team</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="studies" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">02. Estudios</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <span class="date">2024 - 2026</span>
-                        <h3>Tecnólogo en Seguridad Informática</h3>
-                        <h4>Instituto Tecnológico de Las Américas (ITLA)</h4>
-                        <p>Especialista en protección de infraestructuras, administración de sistemas seguros y respuesta a incidentes de seguridad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">03. Proyectos de Infraestructura</h2>
-            <div class="projects-grid">
-
-                <article class="project-card" data-aos="zoom-in">
-                    <div class="project-header">
-                        <i class="far fa-folder-open"></i>
-                    </div>
-                    <h3 class="project-title">Diseño de Red LAN Corporativa</h3>
-                    <div class="project-desc">
-                        <p>Documento técnico de red empresarial en Cisco Packet Tracer con OSPF y VLANs.</p>
-                    </div>
-                    <ul class="project-tech">
-                        <li>Cisco Packet Tracer</li>
-                        <li>VLANs</li>
-                        <li>OSPF</li>
-                    </ul>
-                    <button class="btn-text" onclick="openModal('pdf', 'assets/pdfs/Documentacion-de-red.pdf', 'Diseño de Red Corporativa')">Ver Diagrama (PDF)</button>
-                </article>
-
-                <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-header">
-                        <i class="far fa-folder-open"></i>
-                    </div>
-                    <h3 class="project-title">Hardening de Servidor Linux</h3>
-                    <div class="project-desc">
-                        <p>Video demostrativo de la configuración de seguridad, firewalls y auditoría de logs en un entorno CentOS.</p>
-                    </div>
-                    <ul class="project-tech">
-                        <li>Linux</li>
-                        <li>Bash Scripting</li>
-                        <li>Security</li>
-                    </ul>
-                    <button class="btn-text" onclick="openModal('video', 'assets/videos/demo.mp4', 'Configuración de Servidor')">Ver Demo</button>
-                </article>
-
-                <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-header">
-                        <i class="far fa-folder-open"></i>
-                    </div>
-                    <h3 class="project-title">Implementación Data Center</h3>
-                    <div class="project-desc">
-                        <p>Gestión del cableado estructurado y montaje de racks para servidores blade de alta densidad.</p>
-                    </div>
-                    <ul class="project-tech">
-                        <li>Hardware</li>
-                        <li>Cabling</li>
-                        <li>Racks</li>
-                    </ul>
-                    <button class="btn-text" onclick="openModal('image', 'assets/images/rack.jpg', 'Cableado Estructurado')">Ver Fotos</button>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="sherlocks" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">04. Sherlocks & Investigaciones</h2>
-            <div class="projects-grid">
-
-                <div class="flip-card" data-aos="zoom-in">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fas fa-user-secret"></i>
-                            <h3>Sherlock: Brutus</h3>
-                            <p style="color: var(--text-secondary); margin-top: 10px;">Forensics / Logs</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Análisis forense de auth.log para detectar fuerza bruta y persistencia.</p>
-                            <ul class="flip-tech-list">
-                                <li>Blue Team</li>
-                                <li>Log Analysis</li>
-                            </ul>
-                            <div class="flip-actions">
-                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/brutus.jpg', 'Evidencia Brutus')">Ver</button>
-                                <a href="https://labs.hackthebox.com/achievement/sherlock/2520469/631" target="_blank" class="btn-sm btn-solid">Validar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fas fa-envelope-open-text"></i>
-                            <h3>Sherlock: PhishNet</h3>
-                            <p style="color: var(--text-secondary); margin-top: 10px;">Phishing / SOC</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Simulación SOC: análisis forense de campañas de phishing y detección de adjuntos maliciosos.</p>
-                            <ul class="flip-tech-list">
-                                <li>Email Forensics</li>
-                                <li>Phishing</li>
-                            </ul>
-                            <div class="flip-actions">
-                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/phishnet.jpg', 'Evidencia PhishNet')">Ver</button>
-                                <a href="https://labs.hackthebox.com/achievement/sherlock/2520469/985" target="_blank" class="btn-sm btn-solid">Validar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">05. Certificaciones/Cursos</h2>
-            <div class="certs-grid">
-                
-                <div class="flip-card" data-aos="flip-left">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fas fa-certificate"></i>
-                            <h3>CCNA</h3>
-                            <p style="color: var(--text-secondary);">Redes Empresariales</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Routing, Switching, Wireless y Automatización de redes Cisco.</p>
-                            <div class="flip-actions">
-                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/ccna3.jpg', 'CCNA')">Ver</button>
-                                <a href="https://www.credly.com/badges/e5e42c3c-18fb-4298-800a-4a180b199254" target="_blank" class="btn-sm btn-solid">Validar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card" data-aos="flip-left" data-aos-delay="100">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fas fa-shield-alt"></i>
-                            <h3>Cybersecurity</h3>
-                            <p style="color: var(--text-secondary);">Essentials</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Fundamentos de defensa, amenazas y protección de infraestructuras.</p>
-                            <div class="flip-actions">
-                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/cybersecurity_essentials.jpg', 'Essentials')">Ver</button>
-                                <a href="https://www.credly.com/badges/1c8a5aa8-d402-4f8e-8c97-c2e5857b800f" target="_blank" class="btn-sm btn-solid">Validar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fas fa-lock"></i>
-                            <h3>ISO/IEC 27001</h3>
-                            <p style="color: var(--text-secondary);">Associate</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Estándares internacionales para la Gestión de Seguridad de la Información.</p>
-                            <div class="flip-actions">
-                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/iso27001.jpg', 'ISO 27001')">Ver</button>
-                                <a href="https://www.credly.com/" target="_blank" class="btn-sm btn-solid">Validar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -259,32 +58,13 @@
         <div class="container">
             <p>Diseñado y Desarrollado por Miguel A. Adames Morillo</p>
             <div class="social-links">
-                
-                <a href="https://github.com/The-grey-hat-cpu" target="_blank" title="Mi GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/angel-a-morillo/" target="_blank" title="Mi LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:miguelmorillo324@gmail.com" title="Enviarme un correo">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
+                <a href="https://github.com/The-grey-hat-cpu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/angel-a-morillo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:miguelmorillo324@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="copyright">&copy; 2026 - Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <h3 id="modalTitle">Título del Proyecto</h3>
-            <div id="modalBody" class="modal-body-container">
-            </div>
-        </div>
-    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
