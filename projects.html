@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura | Miguel A. Adames Morillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mi Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="studies.html">Estudios</a></li>
+                <li><a href="projects.html" style="color: var(--accent);">Infraestructura</a></li>
+                <li><a href="sherlocks.html">Sherlocks</a></li> 
+                <li><a href="certifications.html">Certificaciones</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div style="margin-top: 60px;"></div>
+            <h2 class="section-title" data-aos="fade-right">Proyectos de Infraestructura</h2>
+            <div class="projects-grid">
+
+                <div class="flip-card" data-aos="zoom-in">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Diseño Red LAN</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">Cisco Packet Tracer</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Diseño corporativo utilizando OSPF, VLANs y redundancia.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('pdf', 'assets/pdfs/Documentacion-de-red.pdf', 'Diseño LAN')">Ver PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-linux"></i>
+                            <h3>Linux Hardening</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">Server Security</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Configuración de Firewalls, auditoría de logs y permisos en CentOS.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('video', 'assets/videos/demo.mp4', 'Linux Hardening')">Ver Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-server"></i>
+                            <h3>Data Center</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">Cableado Estructurado</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Montaje de racks y gestión de servidores Blade de alta densidad.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/rack.jpg', 'Data Center')">Ver Fotos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Proyecto</h3>
+            <div id="modalBody" class="modal-body-container"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
