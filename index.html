@@ -23,7 +23,8 @@
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#studies">Estudios</a></li>
                 <li><a href="#projects">Infraestructura</a></li>
-                <li><a href="#sherlocks">Sherlocks</a></li> <li><a href="#certifications">Certificaciones</a></li>
+                <li><a href="#sherlocks">Sherlocks</a></li> 
+                <li><a href="#certifications">Certificaciones</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -96,8 +97,6 @@
                 <article class="project-card" data-aos="zoom-in">
                     <div class="project-header">
                         <i class="far fa-folder-open"></i>
-                        <div class="project-links">
-                            </div>
                     </div>
                     <h3 class="project-title">Diseño de Red LAN Corporativa</h3>
                     <div class="project-desc">
@@ -154,7 +153,7 @@
 
                 <article class="project-card" data-aos="zoom-in">
                     <div class="project-header">
-                        <i class="fas fa-user-secret"></i>
+                        <i class="fas fa-user-secret" style="font-size: 25px;"></i>
                     </div>
                     <h3 class="project-title">Sherlock: Brutus</h3>
                     <div class="project-desc">
@@ -165,12 +164,19 @@
                         <li>Log Analysis</li>
                         <li>Forensics</li>
                     </ul>
-                    <button class="btn-text" onclick="openModal('image', 'assets/images/sherlock1.jpg', 'Evidencia Sherlock Brutus')">Ver Evidencia</button>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                        <button class="btn-text" onclick="openModal('image', 'assets/images/sherlock1.jpg', 'Evidencia Sherlock Brutus')">Ver Evidencia</button>
+                        
+                        <a href="PON_AQUI_EL_LINK_DE_HTB_O_VALIDACION" target="_blank" style="font-size: 0.9rem; color: #64ffda; text-decoration: none; border: 1px solid #64ffda; padding: 5px 10px; border-radius: 4px;">
+                            Validar <i class="fas fa-check-circle"></i>
+                        </a>
+                    </div>
                 </article>
 
                 <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-header">
-                        <i class="fas fa-search-location"></i>
+                        <i class="fas fa-search-location" style="font-size: 25px;"></i>
                     </div>
                     <h3 class="project-title">Sherlock: Meerkat</h3>
                     <div class="project-desc">
@@ -180,7 +186,14 @@
                         <li>Wireshark</li>
                         <li>Network Analysis</li>
                     </ul>
-                    <button class="btn-text" onclick="openModal('image', 'assets/images/sherlock2.jpg', 'Evidencia Sherlock Meerkat')">Ver Evidencia</button>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                        <button class="btn-text" onclick="openModal('image', 'assets/images/sherlock2.jpg', 'Evidencia Sherlock Meerkat')">Ver Evidencia</button>
+                        
+                        <a href="PON_AQUI_EL_LINK_DE_HTB_O_VALIDACION" target="_blank" style="font-size: 0.9rem; color: #64ffda; text-decoration: none; border: 1px solid #64ffda; padding: 5px 10px; border-radius: 4px;">
+                            Validar <i class="fas fa-check-circle"></i>
+                        </a>
+                    </div>
                 </article>
 
             </div>
@@ -259,7 +272,7 @@
             <span class="close-modal" onclick="closeModal()">&times;</span>
             <h3 id="modalTitle">Título del Proyecto</h3>
             <div id="modalBody" class="modal-body-container">
-                </div>
+            </div>
         </div>
     </div>
 
