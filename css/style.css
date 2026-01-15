@@ -128,7 +128,6 @@ ul {
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1.1;
-    /* Efecto de texto elegante */
     background: linear-gradient(to right, #fff, #94a3b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -182,7 +181,7 @@ ul {
 .section-title::after {
     content: "";
     display: block;
-    width: 200px; /* Línea decorativa */
+    width: 200px;
     height: 1px;
     background-color: #233554;
     margin-left: 20px;
@@ -306,7 +305,7 @@ ul {
     color: var(--text-secondary);
     font-size: 0.95rem;
     margin-bottom: 20px;
-    height: 80px; /* altura fija para alinear cards */
+    height: 80px;
     overflow: hidden;
 }
 
@@ -329,7 +328,7 @@ ul {
     padding: 0;
 }
 
-/* --- CERTIFICACIONES --- */
+/* --- CERTIFICACIONES (Estilos Antiguos - mantenidos por si acaso) --- */
 .certs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -401,7 +400,7 @@ ul {
 
 /* --- MODAL --- */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -478,7 +477,7 @@ ul {
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* JS toggles this */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: var(--nav-height);
@@ -505,4 +504,97 @@ ul {
     .name-title {
         font-size: 40px;
     }
+}
+
+/* ========================================= */
+/* === NUEVOS ESTILOS: TARJETAS TIPO LIBRO === */
+/* ========================================= */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 320px; /* Altura fija necesaria para el giro */
+    perspective: 1000px; /* Profundidad 3D */
+    margin-bottom: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Efecto al pasar el mouse */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- FRENTE (PORTADA) --- */
+.flip-card-front {
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    border: 1px solid #233554;
+    border-left: 5px solid var(--accent); /* Efecto lomo de libro */
+}
+
+.flip-card-front i {
+    font-size: 50px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.flip-card-front h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* --- REVERSO (CONTENIDO) --- */
+.flip-card-back {
+    background-color: #172a45;
+    color: var(--text-primary);
+    transform: rotateY(180deg);
+    border: 1px solid var(--accent);
+}
+
+.flip-card-back p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.flip-tech-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-family: var(--font-mono);
+}
+
+.flip-actions {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
 }
