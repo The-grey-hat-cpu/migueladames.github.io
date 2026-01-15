@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlocks | Miguel A. Adames Morillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mi Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="studies.html">Estudios</a></li>
+                <li><a href="projects.html">Infraestructura</a></li>
+                <li><a href="sherlocks.html" style="color: var(--accent);">Sherlocks</a></li> 
+                <li><a href="certifications.html">Certificaciones</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div style="margin-top: 60px;"></div>
+            <h2 class="section-title" data-aos="fade-right">Sherlocks & Investigaciones</h2>
+            <div class="projects-grid">
+
+                <div class="flip-card" data-aos="zoom-in">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Sherlock: Brutus</h3>
+                            <p style="color: var(--text-secondary);">Forensics / Logs</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Análisis de auth.log para detectar fuerza bruta y persistencia.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/brutus.jpg', 'Evidencia')">Ver</button>
+                                <a href="https://labs.hackthebox.com/achievement/sherlock/2520469/631" target="_blank" class="btn-sm btn-solid">Validar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <h3>Sherlock: PhishNet</h3>
+                            <p style="color: var(--text-secondary);">Phishing Analysis</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Análisis forense de email, headers y adjuntos maliciosos.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/phishnet.jpg', 'Evidencia')">Ver</button>
+                                <a href="https://labs.hackthebox.com/achievement/sherlock/2520469/985" target="_blank" class="btn-sm btn-solid">Validar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Detalle</h3>
+            <div id="modalBody" class="modal-body-container"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
