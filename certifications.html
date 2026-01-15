@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificaciones | Miguel A. Adames Morillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mi Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="studies.html">Estudios</a></li>
+                <li><a href="projects.html">Infraestructura</a></li>
+                <li><a href="sherlocks.html">Sherlocks</a></li> 
+                <li><a href="certifications.html" style="color: var(--accent);">Certificaciones</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div style="margin-top: 60px;"></div>
+            <h2 class="section-title" data-aos="fade-right">Certificaciones y Cursos</h2>
+            <div class="projects-grid"> <div class="flip-card" data-aos="flip-left">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-certificate"></i>
+                            <h3>CCNA</h3>
+                            <p style="color: var(--text-secondary);">Redes Empresariales</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Routing, Switching y Automatización de redes Cisco.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/ccna3.jpg', 'CCNA')">Ver</button>
+                                <a href="https://www.credly.com/badges/e5e42c3c-18fb-4298-800a-4a180b199254" target="_blank" class="btn-sm btn-solid">Validar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Cybersecurity</h3>
+                            <p style="color: var(--text-secondary);">Essentials</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Defensa contra amenazas digitales.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/cybersecurity_essentials.jpg', 'Essentials')">Ver</button>
+                                <a href="https://www.credly.com/badges/1c8a5aa8-d402-4f8e-8c97-c2e5857b800f" target="_blank" class="btn-sm btn-solid">Validar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="flip-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-lock"></i>
+                            <h3>ISO/IEC 27001</h3>
+                            <p style="color: var(--text-secondary);">Associate</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Gestión de Seguridad de la Información.</p>
+                            <div class="flip-actions">
+                                <button class="btn-sm btn-outline" onclick="openModal('image', 'assets/images/iso27001.jpg', 'ISO')">Ver</button>
+                                <a href="https://www.credly.com/" target="_blank" class="btn-sm btn-solid">Validar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Certificado</h3>
+            <div id="modalBody" class="modal-body-container"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
